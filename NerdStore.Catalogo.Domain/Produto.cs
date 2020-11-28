@@ -3,7 +3,7 @@ using System;
 
 namespace NerdStore.Catalogo.Domain
 {
-    public class Produto : Entity, IAgreggateRoot
+    public class Produto : Entity, IAggregateRoot
     {
         public Produto(string nome, string descricao, bool ativo, decimal valor, Guid categoriaId, DateTime dataCadastro, string imagem, Dimensoes dimensoes)
         {
