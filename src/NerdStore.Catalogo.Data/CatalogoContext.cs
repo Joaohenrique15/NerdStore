@@ -9,7 +9,7 @@ namespace NerdStore.Catalogo.Data
 {
     public class CatalogoContext : DbContext, IUnitOfWork
     {
-        public CatalogoContext(DbContextOptions<CatalogoContext> options) 
+        public CatalogoContext(DbContextOptions<CatalogoContext> options)
             : base(options) { }
 
         public DbSet<Produto> Produtos { get; set; }
@@ -19,8 +19,7 @@ namespace NerdStore.Catalogo.Data
         {
             foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(
                 e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
-                property.Relational().ColumnType = "varchar(100)";
-
+                property.SetColumnType("varchar(100)");
 
             //Busca e aplica as configurações dos mappings
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
@@ -45,6 +44,3 @@ namespace NerdStore.Catalogo.Data
         }
     }
 }
-
-
-
