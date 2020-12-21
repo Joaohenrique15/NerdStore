@@ -25,13 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Domain.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Data", "src\NerdStore.Catalogo.Data\NerdStore.Catalogo.Data.csproj", "{234F909F-9D57-4BD8-AB96-80A9F41EF207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Catalago.Application", "src\NerdStore.Catalago.Application\NerdStore.Catalago.Application.csproj", "{2216B18B-69B7-4B3A-844A-605D519C3290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalago.Application", "src\NerdStore.Catalago.Application\NerdStore.Catalago.Application.csproj", "{2216B18B-69B7-4B3A-844A-605D519C3290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.WebApp.MVC", "src\NerdStore.WebApp.MVC\NerdStore.WebApp.MVC.csproj", "{7906FFD4-4EC8-4DA6-956E-4E5642F79C89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.WebApp.MVC", "src\NerdStore.WebApp.MVC\NerdStore.WebApp.MVC.csproj", "{7906FFD4-4EC8-4DA6-956E-4E5642F79C89}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Core", "src\NerdStore.Core\NerdStore.Core.csproj", "{9E1799AE-6D40-49C0-922C-6AD54E7450F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalogo.Domain", "src\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj", "{BC045975-8C5C-4353-B682-BADBBECE690C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Domain", "src\NerdStore.Vendas.Domain\NerdStore.Vendas.Domain.csproj", "{44C45E1A-C9B8-45C9-A325-392934D2AD7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Application", "src\NerdStore.Vendas.Application\NerdStore.Vendas.Application.csproj", "{372AD56C-495E-4B0F-BF63-E0ED80F4ED20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Data", "src\NerdStore.Vendas.Data\NerdStore.Vendas.Data.csproj", "{20850F7E-12F1-48AE-A92D-EDEEB6CE819C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{BC045975-8C5C-4353-B682-BADBBECE690C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC045975-8C5C-4353-B682-BADBBECE690C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC045975-8C5C-4353-B682-BADBBECE690C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C45E1A-C9B8-45C9-A325-392934D2AD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C45E1A-C9B8-45C9-A325-392934D2AD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C45E1A-C9B8-45C9-A325-392934D2AD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C45E1A-C9B8-45C9-A325-392934D2AD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372AD56C-495E-4B0F-BF63-E0ED80F4ED20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372AD56C-495E-4B0F-BF63-E0ED80F4ED20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372AD56C-495E-4B0F-BF63-E0ED80F4ED20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372AD56C-495E-4B0F-BF63-E0ED80F4ED20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20850F7E-12F1-48AE-A92D-EDEEB6CE819C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20850F7E-12F1-48AE-A92D-EDEEB6CE819C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20850F7E-12F1-48AE-A92D-EDEEB6CE819C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20850F7E-12F1-48AE-A92D-EDEEB6CE819C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +99,9 @@ Global
 		{7906FFD4-4EC8-4DA6-956E-4E5642F79C89} = {719E304C-BAB0-47D9-B5FE-53EACCCF07D9}
 		{9E1799AE-6D40-49C0-922C-6AD54E7450F3} = {7D5C910A-5A1C-42CB-B5E8-F74C88217CE3}
 		{BC045975-8C5C-4353-B682-BADBBECE690C} = {5D4528AA-6B09-45E4-82C8-461C5A7D4203}
+		{44C45E1A-C9B8-45C9-A325-392934D2AD7F} = {0045BD3D-49F1-4694-8A58-B548F5FAFDE0}
+		{372AD56C-495E-4B0F-BF63-E0ED80F4ED20} = {0045BD3D-49F1-4694-8A58-B548F5FAFDE0}
+		{20850F7E-12F1-48AE-A92D-EDEEB6CE819C} = {0045BD3D-49F1-4694-8A58-B548F5FAFDE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACF94987-CDBE-4136-BFF0-C3FEFEAE1263}
