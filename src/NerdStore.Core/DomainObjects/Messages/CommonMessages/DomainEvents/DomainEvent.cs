@@ -1,7 +1,5 @@
 ﻿using NerdStore.Core.DomainObjects.Messages;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace NerdStore.Core.DomainObjects
 {
