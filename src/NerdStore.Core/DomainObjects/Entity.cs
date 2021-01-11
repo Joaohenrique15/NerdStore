@@ -1,10 +1,15 @@
-﻿using System;
+﻿using NerdStore.Core.DomainObjects.Messages;
+using System;
+using System.Collections.Generic;
 
 namespace NerdStore.Core.DomainObjects
 {
     public abstract class Entity
     {
         public Guid Id { get; set; }
+
+        private List<Event> _eventos;
+        public IReadOnlyCollection<Event> Eventos => _eventos?.AsReadOnly();
 
         protected Entity()
         {
@@ -50,5 +55,22 @@ namespace NerdStore.Core.DomainObjects
         {
             throw new NotImplementedException();
         }
+
+        public void AdicionarEvento(Event evento)
+        {
+            _eventos = _eventos ?? new List<Event>();
+            _eventos.Add(evento);
+        }
+
+        public void RemoverEvento(Event evento)
+        {
+            _eventos?.Remove(evento);
+        }
+
+        public void LimparEventos()
+        {
+            _eventos?.Clear();
+        }
+
     }
 }
