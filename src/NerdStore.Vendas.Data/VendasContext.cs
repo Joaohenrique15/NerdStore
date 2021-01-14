@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NerdStore.Core.Data;
-using NerdStore.Core.DomainObjects.Messages;
+using NerdStore.Core.Messages;
 using NerdStore.Core.Communication.Mediator;
 using NerdStore.Vendas.Domain;
 using System;

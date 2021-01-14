@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NerdStore.Core.DomainObjects.Messages
+namespace NerdStore.Core.Messages
 {
     public abstract class Message
     {

@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using NerdStore.Core.DomainObjects.Messages.CommonMessages.Notifications;
+using NerdStore.Core.Messages.CommonMessages.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;

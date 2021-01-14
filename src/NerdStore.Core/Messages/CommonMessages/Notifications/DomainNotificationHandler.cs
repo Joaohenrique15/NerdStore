@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NerdStore.Core.DomainObjects.Messages.CommonMessages.Notifications
+namespace NerdStore.Core.Messages.CommonMessages.Notifications
 {
     public class DomainNotificationHandler : INotificationHandler<DomainNotification>
     {

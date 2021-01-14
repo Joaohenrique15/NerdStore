@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using NerdStore.Core.DomainObjects.Messages;
+using NerdStore.Core.Messages;
 using System;
 
 namespace NerdStore.Vendas.Application.Commands

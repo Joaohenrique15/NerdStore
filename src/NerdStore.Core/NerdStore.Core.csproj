@@ -9,8 +9,4 @@
 	<PackageReference Include="FluentValidation" Version="8.4.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DomainObjects\Messages\CommonMessages\IntegrationEvents\" />
-  </ItemGroup>
-
 </Project>

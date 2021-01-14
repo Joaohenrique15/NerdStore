@@ -1,4 +1,4 @@
-﻿using NerdStore.Core.DomainObjects.Messages;
+﻿using NerdStore.Core.Messages;
 using System;
 using System.Collections.Generic;
 
