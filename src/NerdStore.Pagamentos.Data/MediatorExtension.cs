@@ -1,6 +1,4 @@
-﻿using NerdStore.Core.Messages;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using NerdStore.Core.DomainObjects;
 using NerdStore.Pagamentos.Data;
@@ -13,10 +11,10 @@ namespace NerdStore.Core.Communication.Mediator
         {
             var domainEntities = ctx.ChangeTracker
                 .Entries<Entity>()
-                .Where(x => x.Entity.Notificacoes != null && x.Entity.Notificacoes.Any());
+                .Where(x => x.Entity.Eventos != null && x.Entity.Eventos.Any());
 
             var domainEvents = domainEntities
-                .SelectMany(x => x.Entity.Notificacoes)
+                .SelectMany(x => x.Entity.Eventos)
                 .ToList();
 
             domainEntities.ToList()
